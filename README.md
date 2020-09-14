@@ -1,5 +1,6 @@
-# GITS
-###(GIT Simplified)
+
+# GITS 
+### GIT Simplified
 
 ![GitHub](https://img.shields.io/github/license/amolgautam25/GITS)
 ![GitHub](https://img.shields.io/badge/language-python-blue.svg)
