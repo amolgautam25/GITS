@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2020 Amol Gautam
+Copyright (c) 2020 Amol Gautam, Sneha Kumar, Srujana Rachakonda, Sreeraksha Mavinhally Sreekantha, Tanay Agrawal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
