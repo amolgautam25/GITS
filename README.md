@@ -6,7 +6,7 @@
 ![GitHub](https://img.shields.io/badge/language-python-blue.svg)
 [![DOI](https://zenodo.org/badge/295480790.svg)](https://zenodo.org/badge/latestdoi/295480790)
 
-[![](http://img.youtube.com/vi/V33StYWZNDI/0.jpg)](https://youtu.be/cMcftHMtIZ4 "GITS demo")
+[![](https://img.youtube.com/vi/cMcftHMtIZ4/0.jpg)](https://youtu.be/cMcftHMtIZ4 "GITS demo")
 
 
 
