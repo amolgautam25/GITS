@@ -56,5 +56,16 @@ gits_upstream_subparser.add_argument('--upstream',
                                      help="the upstream branch name")
 gits_upstream_subparser.set_defaults(func=upstream)
 
+gits_profile_subparser = subparsers.add_parser('profile', help='profie help')
+gits_profile_subparser.set_defaults(func=gits_set_profile)
+gits_profile_subparser.add_argument('--email', required=True, help='email to be used')
+gits_profile_subparser.add_argument('--name', required=True, help='name to be used')
+#print(gits_profile_subparser.parse_args(['--email']))
+
+gits_pr_subparser= subparsers.add_parser('sync', help='sync help')
+print("test")
+gits_pr_subparser.set_defaults(func=gits_pr_update)
+gits_pr_subparser.add_argument('--upstream', nargs='?')
+
 args = parser.parse_args()
 args.func(args)
