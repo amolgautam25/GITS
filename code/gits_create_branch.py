@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-import os
-import sys
 from subprocess import Popen, PIPE
 
 

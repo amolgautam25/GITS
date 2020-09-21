@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-import os
-import sys
 from subprocess import Popen, PIPE
 
 
@@ -23,12 +21,12 @@ def gits_commit_func(args):
         subprocess_command.append("-m")
         subprocess_command.append(commit_message)
         if not args.amend:
-            #do nothing
+            # do nothing
             pass
         else:
             subprocess_command.append("--amend")
 
-        #print(subprocess_command)
+        # print(subprocess_command)
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
 

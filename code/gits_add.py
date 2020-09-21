@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-import os
-import sys
 import gits_logging
 from subprocess import Popen, PIPE
 
@@ -20,7 +18,7 @@ def gits_add_func(args):
         file_names_list = args.file_names
         total_files = len(file_names_list)
         if total_files == 0:
-            #do nothing
+            # do nothing
             pass
         else:
             for i in range(0, total_files):
@@ -29,8 +27,8 @@ def gits_add_func(args):
             stdout, stderr = process.communicate()
 
     except Exception as e:
-        gits_logging.gits_logger.error("ERROR: gits add command caught an exception")
-        gits_logging.gits_logger.error("ERROR: {}".format(str(e)))
+        gits_logging.gits_logger.error("gits add command caught an exception")
+        gits_logging.gits_logger.error("{}".format(str(e)))
         print("ERROR: gits add command caught an exception")
         print("ERROR: {}".format(str(e)))
         return False
