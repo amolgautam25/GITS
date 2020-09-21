@@ -57,6 +57,15 @@ gits_upstream_subparser.add_argument('--upstream',
                                      help="the upstream branch name")
 gits_upstream_subparser.set_defaults(func=upstream)
 
+gits_profile_subparser = subparsers.add_parser('profile', help='profie help')
+gits_profile_subparser.set_defaults(func=gits_set_profile)
+gits_profile_subparser.add_argument('--email', required=True, help='email to be used')
+gits_profile_subparser.add_argument('--name', required=True, help='name to be used')
+
+gits_pr_subparser= subparsers.add_parser('sync', help='sync help')
+gits_pr_subparser.set_defaults(func=gits_pr_update)
+gits_pr_subparser.add_argument('--upstream', nargs='?')
+
 gits_super_reset_subparser = subparsers.add_parser('super-reset')
 gits_super_reset_subparser.add_argument('--name', help="Name of the repository to super reset")
 gits_super_reset_subparser.set_defaults(func=super_reset)
