@@ -3,9 +3,16 @@
 import os
 import sys
 import argparse
+from gits_logging import init_gits_logger
 from gits_hello import gits_hello_world
 from gits_add import gits_add_func
 from gits_commit import gits_commit_func
+
+
+logger_status = init_gits_logger()
+if not logger_status:
+    print("ERROR: logger not initialised")
+    sys.exit(1)
 
 parser = argparse.ArgumentParser()
 subparsers = parser.add_subparsers()
