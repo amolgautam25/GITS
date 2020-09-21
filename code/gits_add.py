@@ -2,6 +2,7 @@
 
 import os
 import sys
+import gits_logging
 from subprocess import Popen, PIPE
 
 
@@ -28,6 +29,8 @@ def gits_add_func(args):
             stdout, stderr = process.communicate()
 
     except Exception as e:
+        gits_logging.gits_logger.error("ERROR: gits add command caught an exception")
+        gits_logging.gits_logger.error("ERROR: {}".format(str(e)))
         print("ERROR: gits add command caught an exception")
         print("ERROR: {}".format(str(e)))
         return False

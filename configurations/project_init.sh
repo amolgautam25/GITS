@@ -20,6 +20,6 @@ fi
 echo "Initialising gits directory in user home directory"
 
 GITS=~/.gits
-GITS_LOG=~/.gits/log
+GITS_LOG=~/.gits/logs
 
 mkdir -p $GITS $GITS_LOG
