@@ -19,6 +19,9 @@ if not logger_status:
 parser = argparse.ArgumentParser()
 subparsers = parser.add_subparsers()
 
+gits_hello_subparser = subparsers.add_parser('hello_world')
+gits_hello_subparser.set_defaults(func=gits_hello_world)
+
 gits_set_subparser = subparsers.add_parser('set')
 gits_set_subparser.add_argument('--parent', help='git parent branch')
 gits_set_subparser.set_defaults(func=gits_set_func)
