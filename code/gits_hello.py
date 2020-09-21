@@ -1,6 +1,5 @@
-import os
-import sys
 import gits_logging
+
 
 def gits_hello_world(args):
     """
