@@ -18,7 +18,7 @@ def upstream(args):
             local_to_remote_command.append("branch")
             local_to_remote_command.append("--set-upstream-to=origin/" + args.remote)
             local_to_remote_command.append(args.local)
-            print(local_to_remote_command)
+            # print(local_to_remote_command)
             process = subprocess.Popen(local_to_remote_command, stdout=PIPE, stderr=PIPE)
             stdout, stderr = process.communicate()
 
@@ -30,7 +30,7 @@ def upstream(args):
             check_upstream_command.append("git")
             check_upstream_command.append("config")
             check_upstream_command.append("remote.upstream.url")
-            print(check_upstream_command)
+
             process1 = subprocess.Popen(check_upstream_command, stdout=PIPE, stderr=PIPE)
             stdout, stderr = process1.communicate()
 
@@ -43,7 +43,7 @@ def upstream(args):
                 remote_upstream_command.append("set-url")
                 remote_upstream_command.append("upstream")
                 remote_upstream_command.append(args.upstream)
-                print(remote_upstream_command)
+
                 process2 = subprocess.Popen(remote_upstream_command, stdout=PIPE, stderr=PIPE)
                 stdout, stderr = process2.communicate()
 
@@ -55,7 +55,7 @@ def upstream(args):
                 remote_upstream_command.append("add")
                 remote_upstream_command.append("upstream")
                 remote_upstream_command.append(args.upstream)
-                print(remote_upstream_command)
+
                 process3 = subprocess.Popen(remote_upstream_command, stdout=PIPE, stderr=PIPE)
                 stdout, stderr = process3.communicate()
 
