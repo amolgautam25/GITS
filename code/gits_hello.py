@@ -1,5 +1,4 @@
-import os
-import sys
+import gits_logging
 
 
 def gits_hello_world(args):
@@ -8,3 +7,4 @@ def gits_hello_world(args):
     to user console
     """
     print("Hello from GITS Commandline Tools")
+    gits_logging.gits_logger.info("Hello from GITS Commandline Tools")
