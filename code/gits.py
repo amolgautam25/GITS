@@ -9,6 +9,7 @@ from gits_commit import gits_commit_func
 from gits_set import gits_set_func
 from gits_setupstream import upstream
 from gits_create_branch import create_branch
+from gits_super_reset import super_reset
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -55,6 +56,10 @@ gits_upstream_subparser.add_argument('--local',
 gits_upstream_subparser.add_argument('--upstream',
                                      help="the upstream branch name")
 gits_upstream_subparser.set_defaults(func=upstream)
+
+gits_super_reset_subparser = subparsers.add_parser('super-reset')
+gits_super_reset_subparser.add_argument('--name', help="Name of the repository to super reset")
+gits_super_reset_subparser.set_defaults(func=super_reset)
 
 args = parser.parse_args()
 args.func(args)
