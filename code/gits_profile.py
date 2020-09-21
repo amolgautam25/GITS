@@ -16,45 +16,19 @@ def gits_set_profile(args):
         check_val = check(args.email)
         # print(check_val)
         if check_val == True:
-            profile_unset_email_command = list()
-            profile_unset_email_command.append("git")
-            profile_unset_email_command.append("config")
-            profile_unset_email_command.append("--global")
-            profile_unset_email_command.append("--unset")
-            profile_unset_email_command.append("user.email")
 
-            profile_unset_name_command = list()
-            profile_unset_name_command.append("git")
-            profile_unset_name_command.append("config")
-            profile_unset_name_command.append("--global")
-            profile_unset_name_command.append("--unset")
-            profile_unset_name_command.append("user.name")
-
-            process = subprocess.Popen(profile_unset_email_command, stdout=PIPE, stderr=PIPE)
+            process = subprocess.Popen(["git", "config", "--global","--unset", "user.email" ], stdout=PIPE, stderr=PIPE)
             stdout, stderr = process.communicate()
 
-            process1 = subprocess.Popen(profile_unset_name_command, stdout=PIPE, stderr=PIPE)
+            process1 = subprocess.Popen(["git", "config", "--global","--unset", "user.name" ], stdout=PIPE, stderr=PIPE)
             stdout, stderr = process1.communicate()
-
+            
             # check regex
-            profile_set_name_command = list()
-            profile_set_name_command.append("git")
-            profile_set_name_command.append("config")
-            profile_set_name_command.append("--global")
-            profile_set_name_command.append("user.name")
-            profile_set_name_command.append(args.name)
             # print(cmd)
-            process2 = subprocess.Popen(profile_set_name_command, stdout=PIPE, stderr=PIPE)
+            process2 = subprocess.Popen(["git", "config", "--global", "user.name", args.name ], stdout=PIPE, stderr=PIPE)
             stdout, stderr = process2.communicate()
 
-            profile_set_email_command = list()
-            profile_set_email_command.append("git")
-            profile_set_email_command.append("config")
-            profile_set_email_command.append("--global")
-            profile_set_email_command.append("user.email")
-            profile_set_email_command.append(args.email)
-
-            process3 = subprocess.Popen(profile_set_email_command, stdout=PIPE, stderr=PIPE)
+            process3 = subprocess.Popen(["git", "config", "--global", "user.email", args.email ], stdout=PIPE, stderr=PIPE)
             stdout, stderr = process3.communicate()
 
             profile_verify_name_command = list()
