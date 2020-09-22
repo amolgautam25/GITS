@@ -10,8 +10,13 @@ from gits_set import gits_set_func
 from gits_setupstream import upstream
 from gits_create_branch import create_branch
 from gits_super_reset import super_reset
+
+from gits_rebase import gits_rebase
+from gits_reset import gits_reset
+
 from gits_profile import gits_set_profile
 from gits_pr_update import gits_pr_update_func
+
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -75,6 +80,14 @@ gits_pr_subparser.add_argument('--upstream', nargs='?')
 gits_super_reset_subparser = subparsers.add_parser('super-reset')
 gits_super_reset_subparser.add_argument('--name', help="Name of the repository to super reset")
 gits_super_reset_subparser.set_defaults(func=super_reset)
+
+gits_rb_subparser = subparsers.add_parser('rebase', help='sync help')
+gits_rb_subparser.set_defaults(func=gits_rebase)
+
+gits_reset_subparser = subparsers.add_parser('reset', help='sync help')
+gits_reset_subparser.set_defaults(func=gits_reset)
+gits_reset_subparser.add_argument('--branch', required=True, help='branch to be used')
+
 
 args = parser.parse_args()
 args.func(args)
