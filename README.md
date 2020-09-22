@@ -3,6 +3,7 @@
 ### GIT Simplified
 
 ![GitHub](https://img.shields.io/github/license/amolgautam25/GITS)
+[![Build Status](https://travis-ci.com/amolgautam25/GITS.svg?branch=master)](https://travis-ci.com/amolgautam25/GITS)
 ![GitHub](https://img.shields.io/badge/language-python-blue.svg)
 ![GitHub](https://img.shields.io/badge/language-shell-orange.svg)
 ![YouTube Video Views](https://img.shields.io/youtube/views/cMcftHMtIZ4?style=social)
