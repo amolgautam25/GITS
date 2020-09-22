@@ -81,16 +81,12 @@ gits_super_reset_subparser = subparsers.add_parser('super-reset')
 gits_super_reset_subparser.add_argument('--name', help="Name of the repository to super reset")
 gits_super_reset_subparser.set_defaults(func=super_reset)
 
-gits_rb_subparser= subparsers.add_parser('rebase', help='sync help')
+gits_rb_subparser = subparsers.add_parser('rebase', help='sync help')
 gits_rb_subparser.set_defaults(func=gits_rebase)
 
-
-gits_reset_subparser= subparsers.add_parser('reset', help='sync help')
+gits_reset_subparser = subparsers.add_parser('reset', help='sync help')
 gits_reset_subparser.set_defaults(func=gits_reset)
 gits_reset_subparser.add_argument('--branch', required=True, help='branch to be used')
-
-
-
 
 
 args = parser.parse_args()
