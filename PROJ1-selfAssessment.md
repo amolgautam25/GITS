@@ -1,31 +1,31 @@
 |What | Notes|score 0..4<br>(0=no, 2=ok, 4=wow!)|
 |-----|------|------|
-|Misc | Group members attended tutorial sessions||
-|Distrbuted dev model: | decisions made by unanmyous vote}
-|| group meetings had a round robin speaking order|
-|| group meetings had a moderator that managed the round robin|
-|| group meeting moderator rotated among  the group|
-|| code conforms to some packaging standard|
-|| code has can be downloaded from some standard package manager|
-| |workload is spread over the whole team (one team member is often Xtimes more productive than the others... but nevertheless, here is a track record that everyone is contributing a lot)||
-|| Number of commits||
-|| Number of commits: by different people||
-|| Issues reports: there are many||
-||  issues are being  closed||
-|| License: exists||
-|| DOI badge: exists ||
+|Misc | Group members attended tutorial sessions|4|
+|Distrbuted dev model: | decisions made by unanmyous vote}|4|
+|| group meetings had a round robin speaking order|4|
+|| group meetings had a moderator that managed the round robin|2|
+|| group meeting moderator rotated among  the group|2|
+|| code conforms to some packaging standard|4|
+|| code has can be downloaded from some standard package manager|0|
+| |workload is spread over the whole team (one team member is often Xtimes more productive than the others... but nevertheless, here is a track record that everyone is contributing a lot)|4|
+|| Number of commits|4|
+|| Number of commits: by different people|4|
+|| Issues reports: there are many|4|
+||  issues are being  closed|4|
+|| License: exists|4|
+|| DOI badge: exists |4|
 ||Docs: doco generated , format not ugly ||
 ||Docs: what: point descriptions of each class/function (in isolation) ||
 ||Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z||
 ||Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing||
 ||Docs: 3 minute video, posted to YouTube. That convinces people why they want to work on your code.||
 || (hard) code conforms to some known patterns |
-|Tools Matter| Use of version control tools||
-|| Extensive use of version control tools ||
-|| Repo has an up-to-date requirements.txt file||
-|| Repo does not have "ignore" files.||
-||Use of  style checkers ||
-||Extensive Use of  style checkers ||
+|Tools Matter| Use of version control tools|4|
+|| Extensive use of version control tools |4|
+|| Repo has an up-to-date requirements.txt file|4|
+|| Repo does not have "ignore" files.|4|
+||Use of  style checkers |4|
+||Extensive Use of  style checkers |2|
 || Use of code  formatters. ||
 || Extensive Use of code  formatters. ||
 || Use of syntax checkers. ||
@@ -38,7 +38,7 @@
 || test cases are routinely executed||
 | consensus-oriented model| the files CONTRIBUTING.md and CODEOFCONDUCT.md has have multiple edits by multiple people||
 | | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up||
-| | multiple people contribute to discussions||
+| | multiple people contribute to discussions|4|
 || issues are discussed before they are closed||
 || Chat channel: exists||
 || Chat channel: is active ||
