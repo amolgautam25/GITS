@@ -7,12 +7,15 @@ Please note we have a code of conduct (CODE_OF_CONDUCT.md), please follow it in 
 
 ## Pull Request Process
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
-2. Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. All the developers will go through the pull request and will have an internal discussion regarding the PR.
-6. Any change / modification / clarification will be clarified via comments on the existing PR.
-7. The PR will be approved only when all the developers are convinced that this PR is a genuine PR , and that this PR adds / improves the current functionality of the code.
+1. Maintain GITS project quality.
+2. Should have appropriate ISSUE linked with the Pull request.
+3. The PR should be assigned to the indiividual requesting a merge.
+4. The Reviewers must approve the pull request before merge the code.
+5. The description should be updated as to what has been asked in the issue.
+6. All the development code should accompany unit test cases to suppor the validation results.
+7. Travis Builds should be passing while the code is generated.
+8. The development code should be style checked, well formatted and syntax error free. Use of pep8, autoflake8 and flake8 tools will enable the users to get the required code quality.
+9. Commit messages should company details of the changes been made.
 
 ## Bug Report Process
 
