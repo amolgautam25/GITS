@@ -5,8 +5,7 @@ from subprocess import PIPE
 
 def gits_set_profile(args):
     """
-    Function that prints hello message
-    to user console
+    This functionality allows the user to change the git account quickly with a single command. There are situations when a developer has a personal github account and a enterprise github account as well. Changing between these accounts is a little complicated. This functionality aims to simplify it.
     """
     # print(args.email)
     # print("Hello from GITS Commandline Tools-Profile")
