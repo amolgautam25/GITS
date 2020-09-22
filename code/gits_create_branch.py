@@ -7,7 +7,7 @@ def create_branch(args):
     """
     Function that creates a new local branch
     from local master after updating local master
-    from remote master
+    from remote master. The idea here is that the new branch should have all the latest commits.
     """
     try:
         # checkout master first
