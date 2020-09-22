@@ -19,7 +19,7 @@
 [![](https://img.youtube.com/vi/cMcftHMtIZ4/0.jpg)](https://youtu.be/cMcftHMtIZ4 "GITS demo")
 
 
-#### Supported functionality
+### Supported functionality
 
 #### gits pr_update
 This functionality makes sure that the current branch is able to make a PR without much trouble ( conflict ). It makes sure that the current branch has the latest commit off master branch, and that the local master has all the commits from the upstream master. This helps in reducing merge conflicts
@@ -56,6 +56,15 @@ This logs all the commands executed by the user, and also stores the output of e
 
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
+
+### pydoc implementation
+We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
+For example if you want to go through all the documentation for all files in code/ directory, do the following: 
+
+`cd code`<br>
+`python3 -m pydoc -b `
+
+This will open up a browser and you can see all the files. You can click on a particular file to access the documentation associated with that file.
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
