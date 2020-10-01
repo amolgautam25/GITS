@@ -1,4 +1,4 @@
-# Group 5 takeover plan.
+# Group 6 takeover plan.
 
 ## Contributing Policy updates:
 
