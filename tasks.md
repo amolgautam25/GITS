@@ -1,8 +1,31 @@
 ## Things already done:
-abc
+1. Supported functionalities
+    - gits pr_update
+    - gits profile
+    - gits rebase
+    - gits reset
+    - gits set
+    - gits upstream
+    - gits super reset
+    - gits add
+    - gits commit
+    - gits create_branch
+    - gits logging
+2. Currently, this project can only be executed in Linux operating system.     
 
 ## Things need to be done:
-abc
+1. Transform this 'what' documentation to 'how' documentation. 
+2. Write instructions to setup an environment to run this project.
+3. Add Unit tests for every GITS command.
+4. Refactor the code using a suitable pattern if possible.
+5. Split the implementation into src and tst directories.
+6. Implement functional tests for this new command line tool.
+7. Add new simplified commands in addition to what is already implemented.
+8. Add unit test coverage checker before Gits Push.
+9. Make this tool available for windows operating system as well.
 
 ## Deliverables for phase 2:
-abc
+1. Well defined automated testing setup.
+2. Mixture of What and How documentation.
+3. Implementation of new additional functionalities.
+
