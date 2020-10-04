@@ -11,7 +11,7 @@
     - gits commit
     - gits create_branch
     - gits logging
-2. Currently, this project can only be executed in Linux operating system.     
+2. Currently, this project can only be executed on Linux or Mac operating system's.     
 
 ## Things need to be done:
 1. Transform this 'what' documentation to 'how' documentation. 
