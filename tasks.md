@@ -23,6 +23,18 @@
 7. Add new simplified commands in addition to what is already implemented.
 8. Add unit test coverage checker before Gits Push.
 9. Make this tool available for windows operating system as well.
+10. New functionalities:
+    - gits push 
+    - gits sync
+    - gits init
+    - gits status 
+    - gits track
+    - gits untrack
+    - gits diff
+    - gits checkout
+    - gits branch 
+   
+    
 
 ## Deliverables for phase 2:
 1. Well defined automated testing setup.
