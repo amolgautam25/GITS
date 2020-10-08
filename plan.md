@@ -22,7 +22,7 @@ The functionalities implemented in phase 1 are supported only on Linux/Mac opera
 5. Manually test the functionalities on a dummy repository.
 6. Provide code coverage solution to the project. 
 
-### Functionalities for phase 2:
+### Functionalities:
     - gits push 
     - gits sync
     - gits init
@@ -33,7 +33,7 @@ The functionalities implemented in phase 1 are supported only on Linux/Mac opera
     - gits untrack
     - gits track
    
-## Milestones for phase 2:
+## Milestones:
 1. Good testing setup with unit tests and code coverage.
 2. Clear and complete documentation
 3. Implementation of new functionalities.
