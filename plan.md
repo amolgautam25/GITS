@@ -1,4 +1,5 @@
 ### Phase 1:
+
 The functionalities implemented in phase 1 are supported only on Linux/Mac operating systems.
 ### Supported functionalities
     - gits pr_update
