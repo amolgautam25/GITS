@@ -1,6 +1,6 @@
 ## Functionalities implemented in phase 1:
-The functionalities implemented in phase 1 are supported only on Linux/Mac operating systems
-1. Supported functionalities
+The functionalities implemented in phase 1 are supported only on Linux/Mac operating systems.
+### Supported functionalities
     - gits pr_update
     - gits profile
     - gits rebase
