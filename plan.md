@@ -1,4 +1,4 @@
-## Phase 1:
+## Phase 1
 ### Supported functionalities
     - gits pr_update
     - gits profile
@@ -14,8 +14,8 @@
 
 The above implemented functionalities are supported only on Linux/Mac operating systems.
 
-## Phase 2:
-### Tasks
+## Phase 2
+### Tasks:
 1. Improvise the documentation to remove ambiguity.
 2. Write clear documentation for all the phase 2 functionalities.
 3. Write stepwise instructions to setup the environment.
