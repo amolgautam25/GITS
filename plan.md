@@ -22,6 +22,8 @@ The above implemented functionalities are supported only on Linux/Mac operating 
 4. Write unit tests for all the GITS commands.
 5. Manually test the functionalities on a dummy repository.
 6. Provide code coverage solution to the project. 
+7. Implement functionalities listed in Functionalities section.
+8. Deliver a good repository.
 
 ### Functionalities:
     - gits push 
@@ -30,9 +32,7 @@ The above implemented functionalities are supported only on Linux/Mac operating 
     - gits status 
     - gits diff
     - gits checkout
-    - gits branch 
-    - gits untrack
-    - gits track
+    - gits branch   
    
 ### Deliverables:
 1. Good testing setup with unit tests and code coverage.
