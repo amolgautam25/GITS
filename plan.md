@@ -34,7 +34,7 @@ The above implemented functionalities are supported only on Linux/Mac operating 
     - gits untrack
     - gits track
    
-## Milestones:
+## Deliverables:
 1. Good testing setup with unit tests and code coverage.
 2. Clear and complete documentation
 3. Implementation of new functionalities.
