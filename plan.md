@@ -1,6 +1,4 @@
-### Phase 1:
-
-The functionalities implemented in phase 1 are supported only on Linux/Mac operating systems.
+## Phase 1:
 ### Supported functionalities
     - gits pr_update
     - gits profile
@@ -13,6 +11,8 @@ The functionalities implemented in phase 1 are supported only on Linux/Mac opera
     - gits commit
     - gits create_branch
     - gits logging
+
+The above implemented functionalities are supported only on Linux/Mac operating systems.
 
 ## Phase 2:
 ### Tasks
