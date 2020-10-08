@@ -13,7 +13,8 @@ The functionalities implemented in phase 1 are supported only on Linux/Mac opera
     - gits create_branch
     - gits logging
 
-## Implementations for phase 2:
+## Phase 2:
+### Tasks
 1. Improvise the documentation to remove ambiguity.
 2. Write clear documentation for all the phase 2 functionalities.
 3. Write stepwise instructions to setup the environment.
