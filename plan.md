@@ -32,7 +32,8 @@ The above implemented functionalities are supported only on Linux/Mac operating 
     - gits status 
     - gits diff
     - gits checkout
-    - gits branch   
+    - gits branch 
+    - gits unstage
    
 ### Deliverables:
 1. Good testing setup with unit tests and code coverage.
