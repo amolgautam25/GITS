@@ -5,7 +5,6 @@ import sys
 os.chdir("../code")
 sys.path.insert(1, os.getcwd())
 
-
 from gits_commit import gits_commit_func
 from mock import patch
 

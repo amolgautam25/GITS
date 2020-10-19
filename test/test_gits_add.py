@@ -4,6 +4,7 @@ import os
 
 os.chdir("../code")
 sys.path.insert(1, os.getcwd())
+
 from gits_add import gits_add_func
 from mock import patch
 
