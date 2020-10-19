@@ -64,11 +64,3 @@ For example if you want to go through all the documentation for all files in cod
 This will open up a browser and you can see all the files. You can click on a particular file to access the documentation associated with that file.
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
-
-Group 17 Team Members: 
-
-Amol Gautam  
-Sneha Kumar  
-Sreeraksha Mavinhally Sreekantha  
-Srujana Rachakonda  
-Tanay Agarwal
