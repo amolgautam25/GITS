@@ -3,7 +3,10 @@ from subprocess import PIPE
 
 
 def gits_rebase(args):
-    """This is a highly simplified version of git rebase command. This interactive command asks for the branch that you want to rebase and automatically rebases it off master. This is the most common scenario. The original GIT rebase command is a little un-intuitive and there is always a confusion , about the source branch and the destination branch.
+    """This is a highly simplified version of git rebase command.
+    This interactive command asks for the branch that you want to rebase and automatically rebases it off master.
+    This is the most common scenario. The original GIT rebase command is a little un-intuitive and there is always a
+    confusion , about the source branch and the destination branch.
 """
     print(args)
     print("Hello from GITS command line tools- Rebase")
