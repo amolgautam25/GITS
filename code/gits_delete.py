@@ -3,7 +3,9 @@ from subprocess import PIPE
 
 
 def gits_delete(args):
-    """This function will delete a commit from the remote branch.
+    """
+    Please use this functionality with caution since there would be no going back from this.
+    This function will delete a commit from the remote branch.
     This functionality is useful when you have commited a mistake to the remote repo and do not
     want it be visible in your commit history.
     """

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a59b1097-69e9-4df4-929b-ffc14e76b0d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/code/gits.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/gits.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/gits_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/gits_delete.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
