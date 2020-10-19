@@ -13,6 +13,7 @@ from gits_super_reset import super_reset
 
 from gits_rebase import gits_rebase
 from gits_reset import gits_reset
+from gits_delete import gits_delete
 
 from gits_profile import gits_set_profile
 from gits_pr_update import gits_pr_update_func
@@ -87,6 +88,11 @@ gits_rb_subparser.set_defaults(func=gits_rebase)
 gits_reset_subparser = subparsers.add_parser('reset', help='sync help')
 gits_reset_subparser.set_defaults(func=gits_reset)
 gits_reset_subparser.add_argument('--branch', required=True, help='branch to be used')
+
+gits_reset_subparser = subparsers.add_parser('delete', help='sync help')
+gits_reset_subparser.set_defaults(func=gits_delete)
+gits_reset_subparser.add_argument('--branch', required=True, help='branch to be used')
+gits_reset_subparser.add_argument('--count', required=True, help='Last commits to be deleted')
 
 
 args = parser.parse_args()
