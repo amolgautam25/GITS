@@ -53,6 +53,10 @@ This logs all the commands executed by the user, and also stores the output of e
 
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
+### How to run for Windows
+Currently, this project cannot be run on Windows. You need to make use of WSL to work on this project in Windows although this fix would only work for systems running Windows 10. If you are using another version of Windows, using a virtual machine might be preferred.
+
+Please refer this link to enable WSL : https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
