@@ -1,5 +1,10 @@
 import argparse
-import gits_add
+import sys
+import os
+
+os.chdir("../code")
+sys.path.insert(1, os.getcwd())
+from gits_add import gits_add_func
 from mock import patch
 
 
@@ -10,5 +15,5 @@ def test_gits_add_func_1(mock_var1, mock_args):
     """
     Function to test gits_add, success case
     """
-    test_result = gits_add.gits_add_func(mock_args)
+    test_result = gits_add_func(mock_args)
     assert True == test_result, "Normal case"
