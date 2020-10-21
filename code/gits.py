@@ -18,6 +18,7 @@ from gits_delete import gits_delete
 from gits_profile import gits_set_profile
 from gits_pr_update import gits_pr_update_func
 from gits_track import gits_track
+from gits_untrack import gits_untrack
 
 
 logger_status = init_gits_logger()
@@ -95,13 +96,21 @@ gits_reset_subparser.set_defaults(func=gits_delete)
 gits_reset_subparser.add_argument('--branch', required=True, help='branch to be used')
 gits_reset_subparser.add_argument('--count', required=True, help='Last commits to be deleted')
 
-gits_add_subparser = subparsers.add_parser('track')
-gits_add_subparser.add_argument('file_names',
+gits_track_subparser = subparsers.add_parser('track')
+gits_track_subparser.add_argument('file_names',
                                 metavar='N',
                                 type=str,
                                 nargs='+',
                                 help='all file names')
-gits_add_subparser.set_defaults(func=gits_track)
+gits_track_subparser.set_defaults(func=gits_track)
+
+gits_untrack_subparser = subparsers.add_parser('untrack')
+gits_untrack_subparser.add_argument('file_names',
+                                metavar='N',
+                                type=str,
+                                nargs='+',
+                                help='all file names')
+gits_untrack_subparser.set_defaults(func=gits_untrack)
 
 args = parser.parse_args()
 args.func(args)
