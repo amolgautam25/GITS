@@ -19,6 +19,7 @@ from gits_profile import gits_set_profile
 from gits_pr_update import gits_pr_update_func
 from gits_track import gits_track
 from gits_untrack import gits_untrack
+from gits_undo import gits_undo
 
 
 logger_status = init_gits_logger()
@@ -111,6 +112,14 @@ gits_untrack_subparser.add_argument('file_names',
                                 nargs='+',
                                 help='all file names')
 gits_untrack_subparser.set_defaults(func=gits_untrack)
+
+gits_undo_subparser = subparsers.add_parser('undo')
+gits_undo_subparser.add_argument('file_names',
+                                metavar='N',
+                                type=str,
+                                nargs='+',
+                                help='all file names')
+gits_undo_subparser.set_defaults(func=gits_undo)
 
 args = parser.parse_args()
 args.func(args)
