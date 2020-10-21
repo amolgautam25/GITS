@@ -2,7 +2,7 @@ import argparse
 import os
 import sys
 
-os.chdir("../code")
+os.chdir(os.path.join("..","code"))
 sys.path.insert(1, os.getcwd())
 
 from gits_create_branch import create_branch
