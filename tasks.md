@@ -24,8 +24,8 @@
 8. Add unit test coverage checker before Gits Push.
 9. Make this tool available for windows operating system as well.
 10. New functionalities:
-    - gits push 
-    - gits sync
+    - gits sync 
+    - gits push
     - gits init
     - gits status 
     - gits track
