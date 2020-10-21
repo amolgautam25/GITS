@@ -2,7 +2,6 @@ import argparse
 import os
 import sys
 
-os.chdir(os.path.join("..", "code"))
 sys.path.insert(1, os.getcwd())
 
 from gits_commit import gits_commit_func
