@@ -2,7 +2,7 @@ import argparse
 import sys
 import os
 
-os.chdir("../code")
+os.chdir(os.path.join("..","code"))
 sys.path.insert(1, os.getcwd())
 
 from gits_add import gits_add_func
