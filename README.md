@@ -45,7 +45,6 @@ virtual machine might be preferred.
 Please take a look at our CONTRIBUTING.md where we provide instructions on contributing to the repo and help us in enhancing the current video conferencing platforms.
 
 # Documentation
-
 ## Functionalities Implemented
 1. [gits pr_update](https://github.com/harshitpatel96/GITS/blob/master/docs/pr_update.md)
 2. [gits profile](https://github.com/harshitpatel96/GITS/blob/master/docs/profile.md)
@@ -62,8 +61,7 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 13. [gits untrack](https://github.com/harshitpatel96/GITS/blob/master/docs/untrack.md)
 14. [gits track](https://github.com/harshitpatel96/GITS/blob/master/docs/track.md)
 15. [gits delete](https://github.com/harshitpatel96/GITS/blob/master/docs/delete.md)
-
-# Pydoc implementation
+## Pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
 For example if you want to go through all the documentation for all files in code/ directory, do the following: 
 
