@@ -20,6 +20,7 @@ from gits_pr_update import gits_pr_update_func
 from gits_track import gits_track
 from gits_untrack import gits_untrack
 from gits_undo import gits_undo
+from gits_sync import gits_sync
 
 
 logger_status = init_gits_logger()
@@ -77,7 +78,7 @@ gits_profile_subparser.add_argument('--name',
                                     required=True,
                                     help='name to be used')
 
-gits_pr_subparser = subparsers.add_parser('sync', help='sync help')
+gits_pr_subparser = subparsers.add_parser('pr_update', help='sync help')
 gits_pr_subparser.set_defaults(func=gits_pr_update_func)
 gits_pr_subparser.add_argument('--upstream', nargs='?')
 
@@ -120,6 +121,10 @@ gits_undo_subparser.add_argument('file_names',
                                 nargs='+',
                                 help='all file names')
 gits_undo_subparser.set_defaults(func=gits_undo)
+
+gits_sync_subparser = subparsers.add_parser('sync')
+gits_sync_subparser.add_argument('source', help="name of the trunk branch")
+gits_sync_subparser.set_defaults(func=gits_sync)
 
 args = parser.parse_args()
 args.func(args)
