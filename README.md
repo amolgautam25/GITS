@@ -4,8 +4,6 @@
 
 ![GitHub](https://img.shields.io/github/license/harshitpatel96/GITS)
 [![Build Status](https://travis-ci.com/harshitpatel96/GITS.svg?branch=master)](https://travis-ci.com/harshitpatel96/GITS)
-![GitHub](https://img.shields.io/badge/language-python-blue.svg)
-![GitHub](https://img.shields.io/badge/language-shell-orange.svg)
 [![codecov](https://codecov.io/gh/harshitpatel96/GITS/branch/master/graph/badge.svg?token=G6RG52G2YO)](undefined)
 ![YouTube Video Views](https://img.shields.io/youtube/views/6Y8_RQecnZ8?style=social)
 
@@ -16,56 +14,65 @@
 
 [![](https://img.youtube.com/vi/6Y8_RQecnZ8/hqdefault.jpg)](https://youtu.be/6Y8_RQecnZ8 "GITS demo")
 
+# About GITS
+GITS streamlines most frequently performed workflows using fewer commands which is so much easier and better than usual.
+Git-Simplified AKA GITS can be thought of wrapper around major Git functionalities.
 
-### Supported functionality
+# Installation for Linux
+1. Clone GITS Repo
+2. From the root directory run the following command
+    ```
+    pip install -r requirements.txt
+    ```
+3. Go to configurations directory and run the following command
+    ```
+    bash project_init.sh
+    ```
+   
+# Installation for Windows
+1. Clone GITS Repo
+2. From the root directory run the following command
+    ```
+    pip install -r requirements.txt
+    ```
+3. Currently, this project cannot be run on Windows. You need to make use of WSL to work on this project in Windows 
+although this fix would only work for systems running Windows 10. If you are using another version of Windows, using a 
+virtual machine might be preferred.
 
-#### gits pr_update
-This functionality makes sure that the current branch is able to make a PR without much trouble ( conflict ). It makes sure that the current branch has the latest commit off master branch, and that the local master has all the commits from the upstream master. This helps in reducing merge conflicts
+    Please refer this link to enable WSL : https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
-#### gits profile
-This functionality allows the user to change the git account quickly with a single command. There are situations when a developer has a personal github account and a enterprise github account as well. Changing between these accounts is a little complicated. This functionality aims to simplify it.
+# How to Contribute?
+Please take a look at our CONTRIBUTING.md where we provide instructions on contributing to the repo and help us in enhancing the current video conferencing platforms.
 
-#### gits rebase 
-This is a highly simplified version of git rebase command. This interactive command asks for the branch that you want to rebase and automatically rebases it off master. This is the most common scenario. The original GIT rebase command is a little un-intuitive and there is always a confusion , about the source branch and the destination branch.  
+# Documentation
 
-#### gits reset
-'Reset' intuitively means a HARD reset. This functionality does a HARD reset on your branch, and makes it even with the remote branch. This aims to simplify the confusion between HARD and the SOFT reset.  
+## Functionalities Implemented
+1. [gits pr_update](https://github.com/harshitpatel96/GITS/blob/master/docs/pr_update.md)
+2. [gits profile](https://github.com/harshitpatel96/GITS/blob/master/docs/profile.md)
+3. [gits rebase](https://github.com/harshitpatel96/GITS/blob/master/docs/rebase.md)
+4. [gits reset](https://github.com/harshitpatel96/GITS/blob/master/docs/reset.md)
+5. [gits set](https://github.com/harshitpatel96/GITS/blob/master/docs/set.md)
+6. [gits upstream](https://github.com/harshitpatel96/GITS/blob/master/docs/upstream.md)
+7. [gits super reset](https://github.com/harshitpatel96/GITS/blob/master/docs/super_reset.md)
+8. [gits add](https://github.com/harshitpatel96/GITS/blob/master/docs/add.md)
+9. [gits commit](https://github.com/harshitpatel96/GITS/blob/master/docs/commit.md)
+10. [gits create_branch](https://github.com/harshitpatel96/GITS/blob/master/docs/create_branch.md)
+11. [gits logging](https://github.com/harshitpatel96/GITS/blob/master/docs/logging.md)
+12. [gits undo](https://github.com/harshitpatel96/GITS/blob/master/docs/undo.md)
+13. [gits untrack](https://github.com/harshitpatel96/GITS/blob/master/docs/untrack.md)
+14. [gits track](https://github.com/harshitpatel96/GITS/blob/master/docs/track.md)
+15. [gits delete](https://github.com/harshitpatel96/GITS/blob/master/docs/delete.md)
 
-#### gits set
-This functionality sets the parent branch. 
-
-#### gits upstream
-This functionality changes the upstream with a single command. No need to manually remove the existing upstream, and adding a new upstream. This command will automatically change the upstream for the git repo. If there is any existing upstream , it will be overwritten.
-
-#### gits super reset
-Have you ever run into a situation, where you had to clone the repository again ? Yes, this functionality is exactly for that scenario. It will remove the current repository. It will clone it again, and add all the 'remote' to this freshly cloned repository. 
-
-#### gits add 
-Function that adds files as passed to the gits add command. Performs operation as similar to git add command
-
-#### gits commit
-It is a highly simplified version of git commit command. We are actively working on this functionality such that a commit would fail if the unit tests does not pass. We can specify the tests that need to pass before the commit can actually happen. 
-
-#### gits create_branch
-This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
-
-#### gits logging
-This logs all the commands executed by the user, and also stores the output of each command
-
-Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
-
-### How to run for Windows
-Currently, this project cannot be run on Windows. You need to make use of WSL to work on this project in Windows although this fix would only work for systems running Windows 10. If you are using another version of Windows, using a virtual machine might be preferred.
-
-Please refer this link to enable WSL : https://docs.microsoft.com/en-us/windows/wsl/install-win10
-
-### pydoc implementation
+# Pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
 For example if you want to go through all the documentation for all files in code/ directory, do the following: 
 
 `cd code`<br>
 `python3 -m pydoc -b `
 
-This will open up a browser and you can see all the files. You can click on a particular file to access the documentation associated with that file.
+This will open up a browser and you can see all the files. You can click on a particular file to access the 
+documentation associated with that file.
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
+
+
