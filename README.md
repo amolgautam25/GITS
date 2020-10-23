@@ -4,7 +4,7 @@
 
 ![GitHub](https://img.shields.io/github/license/harshitpatel96/GITS)
 [![Build Status](https://travis-ci.com/harshitpatel96/GITS.svg?branch=master)](https://travis-ci.com/harshitpatel96/GITS)
-[![codecov](https://codecov.io/gh/harshitpatel96/GITS/branch/master/graph/badge.svg?token=G6RG52G2YO)](undefined)
+[![codecov](https://codecov.io/gh/harshitpatel96/GITS/branch/master/graph/badge.svg?token=G6RG52G2YO)](https://codecov.io/gh/harshitpatel96/GITS/)
 ![YouTube Video Views](https://img.shields.io/youtube/views/6Y8_RQecnZ8?style=social)
 
 [![DOI](https://zenodo.org/badge/295480790.svg)](https://zenodo.org/badge/latestdoi/295480790)
