@@ -5,6 +5,8 @@
 *.so
 *.dylib
 
+# GITS.egg-info
+GITS.egg-info/
 # Test binary, built with `go test -c`
 *.test
 
