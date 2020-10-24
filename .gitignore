@@ -1,4 +1,4 @@
-# Binaries for programs and plugins
+#Binaries for programs and plugins
 *.exe
 *.exe~
 *.dll
@@ -7,6 +7,7 @@
 
 # GITS.egg-info
 GITS.egg-info/
+dist/
 # Test binary, built with `go test -c`
 *.test
 
