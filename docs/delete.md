@@ -9,10 +9,12 @@ The code that implements the above mentioned gits functionality is located [here
 
 # Code Description
 ## Functions
-1. gits_delete(args):
+1. gits_delete(args):this function takes args object as an input which has an attribute count to determine how many commits are supposed to be deleted from the master branch. 
 
 
 # How to run it? (Small Example)
-```
+Let's say that you want to delete last 2 commits from the master branch of your repository, then you can do so by passing master in the branch argument and 2 in the count argument. The following command can be used to fulfill the above-mentioned task.
 
+```
+gits delete --branch master --count 2
 ```
