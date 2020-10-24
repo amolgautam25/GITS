@@ -1,7 +1,0 @@
-README.md
-setup.py
-GITS.egg-info/PKG-INFO
-GITS.egg-info/SOURCES.txt
-GITS.egg-info/dependency_links.txt
-GITS.egg-info/requires.txt
-GITS.egg-info/top_level.txt

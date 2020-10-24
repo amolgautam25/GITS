@@ -21,7 +21,7 @@ from gits_track import gits_track
 from gits_untrack import gits_untrack
 from gits_undo import gits_undo
 from gits_sync import gits_sync
-
+from gits_push import gits_push
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -125,6 +125,9 @@ gits_undo_subparser.set_defaults(func=gits_undo)
 gits_sync_subparser = subparsers.add_parser('sync')
 gits_sync_subparser.add_argument('source', help="name of the trunk branch")
 gits_sync_subparser.set_defaults(func=gits_sync)
+
+gits_push_subparser = subparsers.add_parser('push')
+gits_push_subparser.set_defaults(func=gits_push)
 
 args = parser.parse_args()
 args.func(args)
