@@ -8,7 +8,7 @@ def gits_push(args):
         process0 = subprocess.Popen(untracked_file_check_status,
                                     stdout=PIPE, stderr=PIPE)
 
-        stdout, stderr = process1.communicate()
+        stdout, stderr = process0.communicate()
         print(stdout.decode("utf-8"))
 
         if stdout != b'':
