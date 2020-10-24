@@ -1,4 +1,4 @@
-# About gits undo
+# About gits sync
 This command is particularly useful for developers who always work off the master branch on their own development branch. 
 In this type of development, it is necessary to keep the development branch upto date with upstream master in order to avoid any merge comflicts in future.
 gits sync command basically sync the current branch with upstream trunk (main/master) branch by first syncing the trunk branch and rebasing current branch on the synced trunk.
