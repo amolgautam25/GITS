@@ -70,7 +70,7 @@ def gits_pr_update_func(args):
         print(stdout.decode('utf-8'), stderr.decode('utf-8'))
 
     except Exception as e:
-        print("ERROR: gits sync command caught an exception")
+        print("ERROR: gits pr_update command caught an exception")
         print("ERROR: {}".format(str(e)))
         return False
     return True
