@@ -123,7 +123,7 @@ gits_undo_subparser.add_argument('file_names',
 gits_undo_subparser.set_defaults(func=gits_undo)
 
 gits_sync_subparser = subparsers.add_parser('sync')
-gits_sync_subparser.add_argument('source', help="name of the trunk branch")
+gits_sync_subparser.add_argument('-source', help="name of the trunk branch")
 gits_sync_subparser.set_defaults(func=gits_sync)
 
 gits_push_subparser = subparsers.add_parser('push')

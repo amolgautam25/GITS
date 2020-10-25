@@ -20,5 +20,9 @@ Just like others, you also checked out you personal branch off the **main** and 
 However, you realized that it has been a few days ever since you started working on this task and other developers have already merged some changes to the **main** branch.
 Here, you can use the following command to sync your local development branch with upstream **main** branch:
 ```
-$ gits sync main
+$ gits sync -source main
+```
+If you do not provide source, it will take the trunk branch by default.
+```
+$ gits sync
 ```
