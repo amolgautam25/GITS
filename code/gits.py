@@ -17,7 +17,7 @@ from gits_reset import gits_reset
 from gits_profile import gits_set_profile
 from gits_pr_update import gits_pr_update_func
 from gits_status import gits_status
-
+from gits_diff import gits_diff
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -35,18 +35,12 @@ gits_set_subparser.add_argument('--parent', help='git parent branch')
 gits_set_subparser.set_defaults(func=gits_set_func)
 
 gits_add_subparser = subparsers.add_parser('add')
-# print("1")
-# print(gits_add_subparser)
 gits_add_subparser.add_argument('file_names',
                                 metavar='N',
                                 type=str,
                                 nargs='+',
                                 help='all file names')
-# print("2")
-# print(gits_add_subparser)
 gits_add_subparser.set_defaults(func=gits_add_func)
-# print("3")
-# print(gits_add_subparser)
 
 
 gits_commit_subparser = subparsers.add_parser('commit')
@@ -98,6 +92,9 @@ gits_reset_subparser.add_argument('--branch', required=True, help='branch to be 
 
 gits_status_subparser=subparsers.add_parser('status')
 gits_status_subparser.set_defaults(func=gits_status)
+
+gits_diff_subparser=subparsers.add_parser('diff')
+gits_diff_subparser.set_defaults(func=gits_diff)
 
 
 args = parser.parse_args()
