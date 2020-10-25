@@ -13,8 +13,8 @@ The code that implements the above mentioned gits functionality is located [here
 
 
 # How to run it? (Small Example)
-Let's say that you want to delete last 2 commits from the master branch of your repository, then you can do so by passing master in the branch argument and 2 in the count argument. The following command can be used to fulfill the above-mentioned task.
-
+Let's say that you want to delete last 2 commits from the master branch of your repository, then you can do so by passing master in the branch argument and 2 in the count argument. 
+The following command can be used to fulfill the above-mentioned task.
 ```
 gits delete --branch master --count 2
 ```
