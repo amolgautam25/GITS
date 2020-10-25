@@ -1,6 +1,6 @@
 import subprocess
 from subprocess import PIPE
-from helper import get_current_branch
+from helper import get_current_branch, get_trunk_branch_name
 
 
 def gits_sync(args):
@@ -20,12 +20,16 @@ def gits_sync(args):
             exit()
 
         curr_branch = get_current_branch()
+        if args.source:
+            source_branch = args.source
+        else:
+            source_branch = get_trunk_branch_name()
 
         print("Checking out source branch..")
         checkout_master = list()
         checkout_master.append("git")
         checkout_master.append("checkout")
-        checkout_master.append(args.source)
+        checkout_master.append(source_branch)
         process2 = subprocess.Popen(checkout_master, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process2.communicate()
         print(stdout.decode('utf-8'))
@@ -34,8 +38,6 @@ def gits_sync(args):
         pull_upstream = list()
         pull_upstream.append("git")
         pull_upstream.append("pull")
-        #pull_upstream.append("upstream")
-        #pull_upstream.append(args.source)
         process3 = subprocess.Popen(pull_upstream, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process3.communicate()
         print(stdout.decode('utf-8'))
@@ -53,7 +55,7 @@ def gits_sync(args):
         rebase_cmd = list()
         rebase_cmd.append("git")
         rebase_cmd.append("rebase")
-        rebase_cmd.append(args.source)
+        rebase_cmd.append(source_branch)
         process5 = subprocess.Popen(rebase_cmd, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process5.communicate()
         print(stdout.decode('utf-8'))

@@ -1,5 +1,6 @@
 import subprocess
 from subprocess import PIPE
+from helper import get_trunk_branch_name
 
 
 def gits_pr_update_func(args):
@@ -40,31 +41,31 @@ def gits_pr_update_func(args):
             print("Set --upstream")
             exit()
 
-        print("\nCheckout master..")
+        print("\nCheckout main/master..")
         checkout_master = list()
         checkout_master.append("git")
         checkout_master.append("checkout")
-        checkout_master.append("master")
+        checkout_master.append(get_trunk_branch_name())
         process4 = subprocess.Popen(checkout_master, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process4.communicate()
         print(stdout.decode('utf-8'))
 
-        print("Pull Changes from Upstream Master..")
+        print("Pull Changes from Upstream main/Master..")
         pull_upstream = list()
         pull_upstream.append("git")
         pull_upstream.append("pull")
         pull_upstream.append("upstream")
-        pull_upstream.append("master")
+        pull_upstream.append(get_trunk_branch_name())
         process5 = subprocess.Popen(pull_upstream, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process5.communicate()
         print(stdout.decode('utf-8'))
 
-        print("Push changes to local master..")
+        print("Push changes to local main/master..")
         push_origin = list()
         push_origin.append("git")
         push_origin.append("push")
         push_origin.append("origin")
-        push_origin.append("master")
+        push_origin.append(get_trunk_branch_name)
         process6 = subprocess.Popen(push_origin, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process6.communicate()
         print(stdout.decode('utf-8'), stderr.decode('utf-8'))
