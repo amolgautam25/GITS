@@ -7,10 +7,6 @@ sys.path.insert(1, os.getcwd())
 from gits_init import gits_init
 from mock import patch
 
-def parse_args(args):
-    parser = argparse.ArgumentParser()
-    return parser.parse_args(args)
-
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(barre=None, template=None, amend=True))
 @patch("subprocess.Popen", return_value="anything")
