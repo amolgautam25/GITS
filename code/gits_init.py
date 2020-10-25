@@ -1,7 +1,17 @@
 from subprocess import Popen, PIPE
 
 def gits_init(args):
-    
+   """
+   This functionality allows user to transform current
+   user directory into a Git repository.
+   There are three ways to do it.
+   1) Simple git init
+        gits init
+   2) Initialize with a bare flag
+        gits init --bare
+   3) Initialize using a preexisting template
+        gits init --template path-to-template
+   """ 
     try:
         process_commands = ["git", "init"]
 
