@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 import gits_logging
-from subprocess import Popen, PIPE
+from subprocess import PIPE
+import subprocess
 
 
 def gits_track(args):
@@ -18,7 +19,7 @@ def gits_track(args):
         if total_files != 0:
             for i in range(0, total_files):
                 subprocess_command.append(file_names_list[i])
-            process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
+            process = subprocess.Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
             stdout, stderr = process.communicate()
 
     except Exception as e:
