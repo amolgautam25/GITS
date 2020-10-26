@@ -24,6 +24,7 @@ from gits_sync import gits_sync
 from gits_push import gits_push
 from gits_switch import switch_branch
 from gits_merge import merge_branch
+from gits_status import gits_status
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -97,6 +98,9 @@ gits_super_reset_subparser.set_defaults(func=super_reset)
 
 gits_rb_subparser = subparsers.add_parser('rebase', help='sync help')
 gits_rb_subparser.set_defaults(func=gits_rebase)
+
+gits_status_subparser = subparsers.add_parser('status', help='sync help')
+gits_status_subparser.set_defaults(func=gits_status)
 
 gits_reset_subparser = subparsers.add_parser('reset', help='sync help')
 gits_reset_subparser.set_defaults(func=gits_reset)

@@ -5,7 +5,7 @@ from subprocess import Popen, PIPE
 
 def merge_branch(args):
     """
-    Function that allows user to switch between branches
+    Function that allows user to merge any branch into current branch
     """
     try:
         merge_cmd = list()
