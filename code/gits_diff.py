@@ -15,3 +15,7 @@ def gits_diff(args):
 	except Exception as e:
 		print("ERROR: gits diff did not run correctly")
 		print("ERROR: {}".format(str(e)))
+
+		return False
+
+	return True
