@@ -48,7 +48,7 @@ def test_gits_track_sad_case(mock_err, mock_args):
 @patch("subprocess.Popen")
 def test_gits_track_happy_case_no_files(mock_var, mock_args):
     """
-    Function to test gits track, success case
+    Function to test gits track, success case when no files are passed as argument
     """
     mocked_pipe = Mock()
     attrs = {'communicate.return_value': ('output', 'error'), 'returncode': 0}

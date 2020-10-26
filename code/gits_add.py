@@ -2,6 +2,7 @@
 
 import gits_logging
 from subprocess import Popen, PIPE
+import subprocess
 
 
 def gits_add_func(args):
@@ -23,7 +24,7 @@ def gits_add_func(args):
         else:
             for i in range(0, total_files):
                 subprocess_command.append(file_names_list[i])
-            process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
+            process = subprocess.Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
             stdout, stderr = process.communicate()
 
     except Exception as e:
