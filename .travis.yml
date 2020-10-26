@@ -14,6 +14,6 @@ jobs:
   - name: "project-1"
     python: "3.8"
 script:
-  - coverage run -m pytest -q test/
+  - coverage run -m pytest -q code/
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 5c58df4e-d27a-405b-887b-498b8c62abc9
