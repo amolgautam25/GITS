@@ -15,8 +15,8 @@ def parse_args(args):
 
 @patch("argparse.ArgumentParser.parse_args", return_value=argparse.Namespace(b="branch name"))
 @patch("subprocess.Popen")
-@patch("helper.get_trunk_branch_name", return_value="current branch")
-def test_git_create_branch_happy_case(mock_curr_branch, mock_var, mock_args):
+@patch("helper.get_trunk_branch_name", return_value="master branch")
+def test_git_create_branch_happy_case(mock_master_branch, mock_var, mock_args):
     """
     Function to test gits_create_branch, success case
     """
@@ -32,8 +32,8 @@ def test_git_create_branch_happy_case(mock_curr_branch, mock_var, mock_args):
 
 @patch("argparse.ArgumentParser.parse_args", return_value=argparse.Namespace(b=None))
 @patch("subprocess.Popen")
-@patch("helper.get_trunk_branch_name", return_value="current branch")
-def test_git_create_branch_sad_case_with_no_branch(mock_curr_branch, mock_var, mock_args):
+@patch("helper.get_trunk_branch_name", return_value="master branch")
+def test_git_create_branch_sad_case_with_no_branch(mock_master_branch, mock_var, mock_args):
     """
     Function to test gits_create_branch, failure case with no branch name provided
     """
@@ -49,8 +49,8 @@ def test_git_create_branch_sad_case_with_no_branch(mock_curr_branch, mock_var, m
 
 @patch("argparse.ArgumentParser.parse_args", return_value=argparse.Namespace())
 @patch("subprocess.Popen")
-@patch("helper.get_trunk_branch_name", return_value="current branch")
-def test_git_create_branch_sad_case_with_no_arguments(mock_curr_branch, mock_var, mock_args):
+@patch("helper.get_trunk_branch_name", return_value="master branch")
+def test_git_create_branch_sad_case_with_no_arguments(mock_master_branch, mock_var, mock_args):
     """
     Function to test gits_create_branch, failure case with no arguments passed
     """
