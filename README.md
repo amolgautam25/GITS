@@ -63,8 +63,11 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 1. [gits status](https://github.com/harshitpatel96/GITS/blob/master/docs/status.md)
 1. [gits branch](https://github.com/harshitpatel96/GITS/blob/master/docs/branch.md)
 1. [gits diff](https://github.com/harshitpatel96/GITS/blob/master/docs/diff.md)
+1. [gits diff](https://github.com/harshitpatel96/GITS/blob/master/docs/diff.md)
 1. [gits init](https://github.com/harshitpatel96/GITS/blob/master/docs/init.md)
 1. [gits merge](https://github.com/harshitpatel96/GITS/blob/master/docs/merge.md)
+1. [gits push](https://github.com/harshitpatel96/GITS/blob/master/docs/push.md)
+1. [gits pull](https://github.com/harshitpatel96/GITS/blob/master/docs/pull.md)
 
 
 ## Pydoc implementation
