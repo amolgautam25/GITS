@@ -129,5 +129,10 @@ gits_sync_subparser.set_defaults(func=gits_sync)
 gits_push_subparser = subparsers.add_parser('push')
 gits_push_subparser.set_defaults(func=gits_push)
 
+gits_init_subparser = subparsers.add_parser("init")
+gits_init_subparser.add_argument("--bare", action="store_true", help="intialize an empty git repositories but omit the working directory")
+gits_init_subparser.add_argument("--template", help="initialize a git repository using predifined templates")
+gits_init_subparser.set_defaults(func=gits_init)
+
 args = parser.parse_args()
 args.func(args)
