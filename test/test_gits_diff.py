@@ -21,12 +21,29 @@ def test_gits_diff_happy_case(mock_var, mock_args):
     Function to test gits diff, success case
     """
     mocked_pipe = Mock()
-    attrs = {'communicate.return_value': ('output', 'error'), 'returncode': 0}
+    attrs = {'communicate.return_value': ('output'.encode('UTF-8'), 'error'), 'returncode': 0}
     mocked_pipe.configure_mock(**attrs)
     mock_var.return_value = mocked_pipe
 
     mock_args = parse_args(mock_args)
     test_result = gits_diff(mock_args)
     assert True == test_result, "Normal case"
+
+
+@patch("argparse.ArgumentParser.parse_args",
+       return_value=argparse.Namespace())
+@patch("subprocess.Popen")
+def test_gits_diff_sad_case(mock_var, mock_args):
+    """
+    Function to test gits diff, failure case
+    """
+    mocked_pipe = Mock()
+    attrs = {'communicate.return_value': ('output', 'error'), 'returncode': 0}
+    mocked_pipe.configure_mock(**attrs)
+    mock_var.return_value = mocked_pipe
+
+    mock_args = parse_args(mock_args)
+    test_result = gits_diff(mock_args)
+    assert False == test_result
 
 
