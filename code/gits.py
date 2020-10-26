@@ -22,6 +22,7 @@ from gits_untrack import gits_untrack
 from gits_undo import gits_undo
 from gits_sync import gits_sync
 from gits_push import gits_push
+from gits_switch import switch_branch
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -59,6 +60,9 @@ gits_create_subparser = subparsers.add_parser('create')
 gits_create_subparser.add_argument('-b', help="branch name to create")
 gits_create_subparser.set_defaults(func=create_branch)
 
+gits_switch_subparser = subparsers.add_parser('switch')
+gits_switch_subparser.add_argument('branch_name', help="branch name to switch")
+gits_switch_subparser.set_defaults(func=switch_branch)
 
 gits_upstream_subparser = subparsers.add_parser('upstream')
 gits_upstream_subparser.add_argument('--remote',
