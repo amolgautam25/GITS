@@ -3,20 +3,17 @@
 ### GIT Simplified
 
 ![GitHub](https://img.shields.io/github/license/amolgautam25/GITS)
-[![Build Status](https://travis-ci.com/amolgautam25/GITS.svg?branch=master)](https://travis-ci.com/amolgautam25/GITS)
+[![Build Status](https://travis-ci.com/amolgautam25/GITS.svg?branch=master)](https://travis-ci.com/bhavesh242/GITS)
 ![GitHub](https://img.shields.io/badge/language-python-blue.svg)
 ![GitHub](https://img.shields.io/badge/language-shell-orange.svg)
-![YouTube Video Views](https://img.shields.io/youtube/views/cMcftHMtIZ4?style=social)
-
 [![DOI](https://zenodo.org/badge/295480790.svg)](https://zenodo.org/badge/latestdoi/295480790)
 
-![GitHub issues](https://img.shields.io/github/issues/amolgautam25/GITS)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/amolgautam25/GITS)
+![GitHub issues](https://img.shields.io/github/issues/bhavesh242/GITS)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/bhavesh242/GITS)
 
-![GitHub pull requests](https://img.shields.io/github/issues-pr/amolgautam25/GITS)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/amolgautam25/GITS)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/bhavesh242/GITS)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/bhavesh242/GITS)
 
-[![](https://img.youtube.com/vi/cMcftHMtIZ4/0.jpg)](https://youtu.be/cMcftHMtIZ4 "GITS demo")
 
 
 ### Supported functionality
@@ -51,8 +48,22 @@ It is a highly simplified version of git commit command. We are actively working
 #### gits create_branch
 This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
 
+#### gits all-branch
+This command lists all the branches on both local and remote repositories.
+
+
+#### gits remote-branch
+This command lists all the branches on remote repository.
+
+
+#### gits init
+This command initializes the local repository.
+
 #### gits logging
 This logs all the commands executed by the user, and also stores the output of each command
+
+#### gits push
+This pushes all the local changes of origin to the branch specified. 
 
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
@@ -68,10 +79,10 @@ This will open up a browser and you can see all the files. You can click on a pa
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
-Group 17 Team Members: 
+Group 15 Team Members: 
 
-Amol Gautam  
-Sneha Kumar  
-Sreeraksha Mavinhally Sreekantha  
-Srujana Rachakonda  
-Tanay Agarwal
+Steve Victor Menezes
+Durga Devi Mummadi
+Bhavesh Shailesh Agrawal
+Nikitha Thotireddy
+Aadil Anwar Khan
