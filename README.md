@@ -46,21 +46,27 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 
 # Documentation
 ## Functionalities Implemented
-1. [gits pr_update](https://github.com/harshitpatel96/GITS/blob/master/docs/pr_update.md)
-2. [gits profile](https://github.com/harshitpatel96/GITS/blob/master/docs/profile.md)
-3. [gits rebase](https://github.com/harshitpatel96/GITS/blob/master/docs/rebase.md)
-4. [gits reset](https://github.com/harshitpatel96/GITS/blob/master/docs/reset.md)
-5. [gits upstream](https://github.com/harshitpatel96/GITS/blob/master/docs/upstream.md)
-6. [gits super reset](https://github.com/harshitpatel96/GITS/blob/master/docs/super_reset.md)
-7. [gits add](https://github.com/harshitpatel96/GITS/blob/master/docs/add.md)
-8. [gits commit](https://github.com/harshitpatel96/GITS/blob/master/docs/commit.md)
-9. [gits create_branch](https://github.com/harshitpatel96/GITS/blob/master/docs/create_branch.md)
-10. [gits logging](https://github.com/harshitpatel96/GITS/blob/master/docs/logging.md)
-11. [gits undo](https://github.com/harshitpatel96/GITS/blob/master/docs/undo.md)
-12. [gits untrack](https://github.com/harshitpatel96/GITS/blob/master/docs/untrack.md)
-13. [gits track](https://github.com/harshitpatel96/GITS/blob/master/docs/track.md)
-14. [gits delete](https://github.com/harshitpatel96/GITS/blob/master/docs/delete.md)
-15. [gits sync](https://github.com/harshitpatel96/GITS/blob/master/docs/sync.md)
+1. [gits profile](https://github.com/harshitpatel96/GITS/blob/master/docs/profile.md)
+1. [gits rebase](https://github.com/harshitpatel96/GITS/blob/master/docs/rebase.md)
+1. [gits reset](https://github.com/harshitpatel96/GITS/blob/master/docs/reset.md)
+1. [gits upstream](https://github.com/harshitpatel96/GITS/blob/master/docs/upstream.md)
+1. [gits super reset](https://github.com/harshitpatel96/GITS/blob/master/docs/super_reset.md)
+1. [gits commit](https://github.com/harshitpatel96/GITS/blob/master/docs/commit.md)
+1. [gits create_branch](https://github.com/harshitpatel96/GITS/blob/master/docs/create_branch.md)
+1. [gits logging](https://github.com/harshitpatel96/GITS/blob/master/docs/logging.md)
+1. [gits undo](https://github.com/harshitpatel96/GITS/blob/master/docs/undo.md)
+1. [gits untrack](https://github.com/harshitpatel96/GITS/blob/master/docs/untrack.md)
+1. [gits track](https://github.com/harshitpatel96/GITS/blob/master/docs/track.md)
+1. [gits delete](https://github.com/harshitpatel96/GITS/blob/master/docs/delete.md)
+1. [gits sync](https://github.com/harshitpatel96/GITS/blob/master/docs/sync.md)
+1. [gits switch](https://github.com/harshitpatel96/GITS/blob/master/docs/switch.md)
+1. [gits status](https://github.com/harshitpatel96/GITS/blob/master/docs/status.md)
+1. [gits branch](https://github.com/harshitpatel96/GITS/blob/master/docs/branch.md)
+1. [gits diff](https://github.com/harshitpatel96/GITS/blob/master/docs/diff.md)
+1. [gits init](https://github.com/harshitpatel96/GITS/blob/master/docs/init.md)
+1. [gits merge](https://github.com/harshitpatel96/GITS/blob/master/docs/merge.md)
+
+
 ## Pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
 For example if you want to go through all the documentation for all files in code/ directory, do the following: 
