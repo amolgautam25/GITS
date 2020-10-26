@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-from subprocess import Popen, PIPE
+from subprocess import PIPE
+import subprocess
 
 
 def get_current_branch():
@@ -13,7 +14,7 @@ def get_current_branch():
         subprocess_command.append("rev-parse")
         subprocess_command.append("--abbrev-ref")
         subprocess_command.append("HEAD")
-        process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
+        process = subprocess.Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
         branch = stdout.decode('UTF-8')
 
@@ -31,7 +32,7 @@ def get_trunk_branch_name():
         subprocess_command = list()
         subprocess_command.append("git")
         subprocess_command.append("branch")
-        process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
+        process = subprocess.Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
         all_branches = stdout.decode('UTF-8')
         list_of_branch_names = all_branches.split()
@@ -41,8 +42,9 @@ def get_trunk_branch_name():
         elif "main" in list_of_branch_names:
             return "main"
         else:
+            print("h")
             return list_of_branch_names[0]
-        return None
+
     except:
         print("error occured while getting trunk branch name!")
         return None
