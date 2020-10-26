@@ -65,6 +65,9 @@ This command initializes the local repository.
 #### gits logging
 This logs all the commands executed by the user, and also stores the output of each command
 
+#### gits push
+This pushes all the local changes of origin to the branch specified. 
+
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
 
