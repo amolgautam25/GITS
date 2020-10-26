@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#/usr/bin/python3
 
 import sys
 import argparse
@@ -28,6 +28,7 @@ from gits_status import gits_status
 from gits_diff import gits_diff
 from gits_branch import gits_branch
 from gits_init import gits_init
+from gits_pull import gits_pull
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -149,13 +150,21 @@ gits_sync_subparser.add_argument('-source', help="name of the trunk branch")
 gits_sync_subparser.set_defaults(func=gits_sync)
 
 gits_push_subparser = subparsers.add_parser('push')
+gits_push.subparser.add_argument("--rebase", nargs=1, default=False, help="do a pull rebase before pushing the changes", required=False)
 gits_push_subparser.set_defaults(func=gits_push)
 
 gits_init_subparser = subparsers.add_parser("init")
+
 gits_init_subparser.add_argument("--bare", action="store_true", help="intialize an empty git repositories but omit the working directory")
 gits_init_subparser.add_argument("--template", help="initialize a git repository using predifined templates")
 gits_init_subparser.add_argument("--clone_url", help="url for cloning an already existing repo")
 gits_init_subparser.set_defaults(func=gits_init)
+
+gits_pull_subparser = subparsers.add_parser("pull")
+gits_pull_subparser.add_argument("--nocommit", action='store_true', help="fetches the remote contain but does not create a new merge commit", required=False)
+gits_pull_subparser.add_argument("--rebase", action='store_true',  help="uses git rebase to merge with the remote branch", required=False)
+gits_pull_subparser.add_argument("--branch", nargs="?", default=False, help="you can specify the branch you want to pull", required=False)
+gits_pull_subparser.set_defaults(func=gits_pull)
 
 args = parser.parse_args()
 args.func(args)
