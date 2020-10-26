@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-from subprocess import Popen, PIPE
+from subprocess import PIPE
+import subprocess
 
 
 def gits_status(args):
@@ -14,7 +15,7 @@ def gits_status(args):
         status_cmd = list()
         status_cmd.append("git")
         status_cmd.append("status")
-        process1 = Popen(status_cmd, stdout=PIPE, stderr=PIPE)
+        process1 = subprocess.Popen(status_cmd, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process1.communicate()
         print(stdout.decode("UTF-8"))
 
