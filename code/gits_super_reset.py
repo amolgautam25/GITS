@@ -18,11 +18,7 @@ def super_reset(args):
             print("Required parameters are not provided. "
                   "Please add --name parameter.")
             return False
-
-        # Stepping into the repository for configuration details
         os.chdir("./" + args.name)
-
-        # get remote url first
         remote_loc = check_output(["git", "config", "remote.origin.url"])
 
         if not remote_loc:
@@ -30,15 +26,9 @@ def super_reset(args):
             return False
 
         remote_loc = remote_loc.strip().decode("utf-8")
-
-        # going out of the directory to remove it
         os.chdir("../")
-
-        # removing the repo
         print("Removing the current repository...")
         shutil.rmtree(args.name)
-
-        # new clone
         print("Freshly cloning...")
         check_output(["git", "clone", remote_loc])
 

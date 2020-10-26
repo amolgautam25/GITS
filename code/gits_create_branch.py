@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-from subprocess import Popen, PIPE
+from subprocess import PIPE
+import helper
+import subprocess
 
 
 def create_branch(args):
@@ -10,19 +12,19 @@ def create_branch(args):
     from remote master. The idea here is that the new branch should have all the latest commits.
     """
     try:
-        # checkout master first
+        # checkout main/master first
         checkout_master = list()
         checkout_master.append("git")
         checkout_master.append("checkout")
-        checkout_master.append("master")
-        process1 = Popen(checkout_master, stdout=PIPE, stderr=PIPE)
+        checkout_master.append(helper.get_trunk_branch_name())
+        process1 = subprocess.Popen(checkout_master, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process1.communicate()
 
         # update with remote
         update_master = list()
         update_master.append("git")
         update_master.append("pull")
-        process2 = Popen(update_master, stdout=PIPE, stderr=PIPE)
+        process2 = subprocess.Popen(update_master, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process2.communicate()
 
         # checkout new branch
@@ -34,7 +36,7 @@ def create_branch(args):
         checkout_feature.append("checkout")
         checkout_feature.append("-b")
         checkout_feature.append(args.b)
-        process3 = Popen(checkout_feature, stdout=PIPE, stderr=PIPE)
+        process3 = subprocess.Popen(checkout_feature, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process3.communicate()
 
     except Exception as e:

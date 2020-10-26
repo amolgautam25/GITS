@@ -1,6 +1,5 @@
 import gits_logging
 
-
 def gits_hello_world(args):
     """
     Function that prints hello message
