@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-from subprocess import Popen, PIPE
+from subprocess import PIPE
+import subprocess
 
 
 def gits_commit_func(args):
@@ -27,7 +28,7 @@ def gits_commit_func(args):
             subprocess_command.append("--amend")
 
         # print(subprocess_command)
-        process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
+        process = subprocess.Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
 
     except Exception as e:
