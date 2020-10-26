@@ -6,7 +6,6 @@ sys.path.insert(1, os.getcwd())
 
 from gits_track import gits_track
 from mock import patch, Mock
-import unittest
 
 
 def parse_args(args):
