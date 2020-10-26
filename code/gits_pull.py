@@ -1,6 +1,6 @@
 import subprocess
 from subprocess import PIPE
-from helper import get_current_branch
+import helper
 
 def gits_pull(args):
     """
@@ -16,18 +16,18 @@ def gits_pull(args):
         process0 = subprocess.Popen(untracked_file_check_status,
                                     stdout=PIPE, stderr=PIPE)
         stdout, stderr = process0.communicate()
-        print(stdout.decode("utf-8"))
+        # print(stdout.decode("utf-8"))
 
         if stdout != b'':
             print("Note: Please commit uncommited changes before pulling")
-            exit()
+            return False
 
         print(args)
         arguments = []
-        curr_branch = get_current_branch()
+        curr_branch = helper.get_current_branch()
         if args.nocommit is True and args.rebase is True:
             print("You cannot use both nocommit and rebase at the same time")
-            exit()
+            return False
         elif args.nocommit is True:
             arguments += ["--no-commit"]
         elif args.rebase is True:
@@ -43,7 +43,7 @@ def gits_pull(args):
         process1 = subprocess.Popen(pull_command, stdout=PIPE, stderr=PIPE)     
         stdout, stderr = process1.communicate()
         print(stdout)
-        print(stdout.decode("utf-8"))
+        # print(stdout.decode("utf-8"))
 
     except Exception as e:
         print("ERROR: gits pull command caught an exception")
