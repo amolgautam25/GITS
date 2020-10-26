@@ -79,10 +79,10 @@ This will open up a browser and you can see all the files. You can click on a pa
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
-Group 17 Team Members: 
+Group 15 Team Members: 
 
-Amol Gautam  
-Sneha Kumar  
-Sreeraksha Mavinhally Sreekantha  
-Srujana Rachakonda  
-Tanay Agarwal
+Steve Victor Menezes
+Durga Devi Mummadi
+Bhavesh Shailesh Agrawal
+Nikitha Thotireddy
+Aadil Anwar Khan
