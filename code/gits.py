@@ -150,7 +150,7 @@ gits_sync_subparser.add_argument('-source', help="name of the trunk branch")
 gits_sync_subparser.set_defaults(func=gits_sync)
 
 gits_push_subparser = subparsers.add_parser('push')
-gits_push.subparser.add_argument("--rebase", nargs=1, default=False, help="do a pull rebase before pushing the changes", required=False)
+gits_push_subparser.add_argument("--rebase", nargs=1, default=False, help="do a pull rebase before pushing the changes", required=False)
 gits_push_subparser.set_defaults(func=gits_push)
 
 gits_init_subparser = subparsers.add_parser("init")
