@@ -5,7 +5,7 @@ from subprocess import Popen, PIPE
 
 def gits_diff(args):
     """
-    Function that allows users to show difference from last commit
+    Function that allows users to show difference since last commit
     """
     try:
         diff_cmd = list()
