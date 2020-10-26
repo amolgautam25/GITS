@@ -51,6 +51,17 @@ It is a highly simplified version of git commit command. We are actively working
 #### gits create_branch
 This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
 
+#### gits all-branch
+This command lists all the branches on both local and remote repositories.
+
+
+#### gits remote-branch
+This command lists all the branches on remote repository.
+
+
+#### gits init
+This command initializes the local repository.
+
 #### gits logging
 This logs all the commands executed by the user, and also stores the output of each command
 
