@@ -88,7 +88,7 @@ def test_gits_pull_sad_case_with_no_commit_and_rebase(mock_current_branch, mock_
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(nocommit=True, rebase=True, branch="branch name"))
 @patch("subprocess.Popen")
-def test_gits_pull_sad_case_with_uncomitted_changes(mock_var, mock_args):
+def test_gits_pull_sad_case_with_uncommitted_changes(mock_var, mock_args):
     """
     Function to test gits pull, failure case with uncommited changes
     """
