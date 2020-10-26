@@ -150,6 +150,7 @@ gits_push_subparser.set_defaults(func=gits_push)
 gits_init_subparser = subparsers.add_parser("init")
 gits_init_subparser.add_argument("--bare", action="store_true", help="intialize an empty git repositories but omit the working directory")
 gits_init_subparser.add_argument("--template", help="initialize a git repository using predifined templates")
+gits_init_subparser.add_argument("--clone_url", help="url for cloning an already existing repo")
 gits_init_subparser.set_defaults(func=gits_init)
 
 args = parser.parse_args()
